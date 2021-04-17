@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html,body{
+            /* 브라우저의 크기 설정 */
+            height:100%;
+            /* 브라우저 전체 여백 0으로 설정 */
+            margin:0;
+        }
+        .container{
+            display:flex;
+            flex-direction: column;
+            /* flex-direction 방향 정렬 기준 */
+            justify-content: center;
+            /* 나머지 축 기준 */
+            align-items: center;
+            border: 1px solid red;
+            /* 브라우저의 크기가 설정되어있어야 된다. */
+            height:100%;
+        }
+        .items{
+            width:100px;
+            height:100px;
+            background-color: blue;
+            margin:1px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+  <div class="items"></div>
+  <div class="items"></div>
+  <div class="items"></div>
+  <div class="items"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+*{
+font-family: 'Nanum Pen Script', cursive;
+}
+
+
+html, body{
+    height:100%;
+    margin:0;
+}
+
+.wrap{
+    width:980px;
+    margin:auto;
+}
+
+.form-wrap{
+    border: 1px solid black;
+    margin:auto;
+    margin-bottom: 25px;
+    width:400px;
+    border-radius:2%;
+    padding: 20px;
+}
+
+.card-a{
+    color:#007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.card-comment{
+    color:blue;
+}
