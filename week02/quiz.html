@@ -17,7 +17,7 @@
             let name = $('#input-name').val()
             // 빈칸이 아니라면 입력 받음
             // 사용자 입력에는 trim을 반드시 사용해라. 양 사이드 공백 문자 제거
-            // alert 함수가 입력되면 access script 문제
+            // cross-site scripting 이슈 있음
             if (name.trim()) {
                 // 2. 가져온 값을 이용해 names에 붙일 태그를 만든다. (let tempHtml = `<li>박르</li>`)
                 let tempHtml = `<li>${name}</li>`
