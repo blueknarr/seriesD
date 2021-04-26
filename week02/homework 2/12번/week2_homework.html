@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./week2_homework.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <script src="./week2_homework.js"></script>
+    <title>비트코인 떨이 판매</title>
+</head>
+<body>
+<div class="wrap">
+    <div class="img-wrap">
+        <img src="https://static.dw.com/image/56681972_303.jpg" alt="">
+    </div>
+    <div class="content-wrap">
+        <h1>비트코인 팝니다</h1>
+        <h3>가격:6,000만원/개</h3>
+        <p>이 비트코인은 한정판 할인 물량입니다. 이번 기회를 놓치시면 다시는 이 가격에 매수하지 못 합니다. 구매를 서둘러 주세요. 매진 임박!!</p>
+    </div>
+    <div class="exchange-info">
+        달러-원 환율: <span id="exchange"></span>
+    </div>
+    <div class="form-wrap">
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">주문자이름</span>
+            <input type="text" class="form-control" id="form-control1"
+                   aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon2">수량</span>
+            <select class="form-select select-width" id="form-control2" aria-label="Default select example">
+                <option selected>-- 수량을 선택하세요 --</option>
+                <option value="1">1개</option>
+                <option value="2">2개</option>
+                <option value="3">3개</option>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon3">주소</span>
+            <input type="text" class="form-control" id="form-control3"
+                   aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon4">전화번호</span>
+            <input type="text" class="form-control" id="form-control4"
+                   aria-describedby="basic-addon1">
+        </div>
+    </div>
+    <div class="btn-wrap">
+        <button onclick="addOrder()" class="btn btn-primary btn-margin">주문하기</button>
+    </div>
+    <div class="order">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">주소</th>
+                    <th scope="col">수량</th>
+                    <th scope="col">주소</th>
+                    <th scope="col">전화번호</th>
+                </tr>
+            </thead>
+            <tbody id="orders-box">
+
+            </tbody>
+        </table>
+    </div>
+
+</div>
+</body>
+</html>
