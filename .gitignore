@@ -305,3 +305,4 @@ $RECYCLE.BIN/
 # End of https://www.toptal.com/developers/gitignore/api/windows,macos,linux,pycharm+all,node,git
 
 week03/secret.py
+venv/
