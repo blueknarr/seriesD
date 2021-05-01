@@ -10,8 +10,12 @@ selector = '#old_content > table > tbody > tr'
 title_selector = 'td.title > div > a'
 titles = soup.select(selector)
 
+rating_selector = 'td.point'
+cnt = 1
 for title in titles:
     title_tag = title.select_one(title_selector)
+    rating_tag = title.select_one(rating_selector)
 
     if title_tag:
-        print(title_tag.text)
+        print(f'{cnt}', title_tag.text, rating_tag.text)
+        cnt+=1
