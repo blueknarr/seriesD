@@ -304,6 +304,10 @@ $RECYCLE.BIN/
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,macos,linux,pycharm+all,node,git
 
+<<<<<<< HEAD
+week03/secret.py
+venv/
+=======
 
 # Created by https://www.toptal.com/developers/gitignore/api/python
 # Edit at https://www.toptal.com/developers/gitignore?templates=python
@@ -614,3 +618,5 @@ Thumbs.db
 # End of https://www.toptal.com/developers/gitignore/api/python
 
 week03/secret.py
+venv/
+>>>>>>> feature/python
