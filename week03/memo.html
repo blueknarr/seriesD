@@ -40,6 +40,20 @@
         }
     </style>
     <script>
+        $(document).ready(function () {
+            $.ajax({
+                type: 'GET',
+                url: 'http://spartacodingclub.shop/post',
+                data: {},
+                success: function (response) {
+                    let articles = response['articles']
+                    for (let i of articles) {
+                        console.log(i)
+                    }
+                }
+            })
+        })
+
         function openClose() {
             // id 값 post-box의 display 값이 block 이면(= 눈에 보이면)
             if ($("#post-box").css("display") == "block") {
